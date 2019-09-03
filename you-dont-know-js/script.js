@@ -5,7 +5,8 @@ let collect = document.querySelectorAll('.books'),
     body = document.querySelector('body'),
     adv = document.querySelector('.adv'),
     h2 = document.querySelectorAll('h2 a'),
-    li = document.querySelectorAll('.book ul li'),
+    ul = document.querySelectorAll('ul'),
+    li = document.querySelectorAll('li'),
     newElem = document.createElement('li');
 
 // Восстановить порядок книг.
@@ -26,30 +27,14 @@ h2[4].textContent='Книга 3. this и Прототипы Объектов';
 adv.setAttribute('style', 'display: none');
 
 // Восстановить порядок глав во второй и пятой книге
-elem[0].appendChild(li[0]);
-elem[0].appendChild(li[1]);
-elem[0].appendChild(li[3]);
-elem[0].appendChild(li[6]);
-elem[0].appendChild(li[8]);
-elem[0].appendChild(li[4]);
-elem[0].appendChild(li[5]);
-elem[0].appendChild(li[7]);
-elem[0].appendChild(li[9]);
-elem[0].appendChild(li[2]);
-elem[0].appendChild(li[10]);
+ul[0].insertBefore(li[8], li[4]);
+ul[0].insertBefore(li[6], li[8]);
+ul[0].insertBefore(li[2], li[10]);
 
-elem[5].appendChild(li[0]);
-elem[5].appendChild(li[1]);
-elem[5].appendChild(li[9]);
-elem[5].appendChild(li[3]);
-elem[5].appendChild(li[4]);
-elem[5].appendChild(li[2]);
-elem[5].appendChild(li[6]);
-elem[5].appendChild(li[7]);
-elem[5].appendChild(li[5]);
-elem[5].appendChild(li[8]);
-elem[5].appendChild(li[10]);
+ul[5].insertBefore(li[55], li[48]);
+ul[5].insertBefore(li[48], li[51]);
+ul[5].insertBefore(li[51], li[54]);
 
 // в шестой книге добавить главу “Глава 8: За пределами ES6” и поставить её в правильное место
 newElem.textContent = 'Глава 8: За пределами ES6';
-elem[2].appendChild(newElem);
+ul[2].appendChild(newElem);

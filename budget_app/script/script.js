@@ -3,12 +3,19 @@ let calculate = document.getElementById('start'),
     plus2 = document.getElementsByClassName('btn_plus')[1],
     checkBox = document.querySelector('#deposit-check'),
     incomeItem = document.querySelectorAll('.additional_income-item'),
-    nameValue = document.querySelectorAll('.result-total'),
+
+    budgetMonth = document.querySelector('.budget_month-value'),
+    budgetDay = document.querySelector('.budget_day-value'),
+    expensesMonth = document.querySelector('.expenses_month-value'),
+    additionalIncome = document.querySelector('.additional_income-value'),
+    additionalExpenses = document.querySelector('.additional_expenses-value'),
+    incomePeriod = document.querySelector('.income_period-value'),
+    targetMonth = document.querySelector('.target_month-value'),
+
     salary = document.querySelector('.salary-amount'),
-    incomeTitle = document.querySelector('.income-title'),
+    incomeTitle = document.querySelector('input.income-title'),
     incomeAmount = document.querySelector('.income-amount'),
     expensesTitle = document.querySelector('input.expenses-title'),
     expensesAmount = document.querySelector('.expenses-amount'),
     expensesItem = document.querySelector('.additional_expenses-item'),
     periodSelect = document.querySelector('.target-amount');
-

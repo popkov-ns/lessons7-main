@@ -11,3 +11,4 @@ let calculate = document.getElementById('start'),
     expensesAmount = document.querySelector('.expenses-amount'),
     expensesItem = document.querySelector('.additional_expenses-item'),
     periodSelect = document.querySelector('.target-amount');
+

@@ -38,3 +38,4 @@ ul[5].insertBefore(li[51], li[54]);
 // в шестой книге добавить главу “Глава 8: За пределами ES6” и поставить её в правильное место
 newElem.textContent = 'Глава 8: За пределами ES6';
 ul[2].appendChild(newElem);
+ul[2].appendChild(li[26]);
